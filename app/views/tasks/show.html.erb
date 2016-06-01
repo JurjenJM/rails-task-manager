@@ -1,0 +1,11 @@
+Should display the task's details (content, date of creation, etc.) and a back-link to the index page.
+
+
+<h2><%= @task.name %></h2>
+<p><%= @task.description %></p>
+<p><%= @task.complete %></p>
+
+<%= link_to "List of all tasks", tasks_path(@task) %>
+
+
+
